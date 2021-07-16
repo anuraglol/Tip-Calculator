@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tip Calculator</title>
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+    <script
+      src="https://kit.fontawesome.com/73c2f69ccd.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/gh/anurag-coder01/Font-Awesome@main/fontAwesomePro.js"></script>
+  </head>
+  <body class="h-screen w-screen text-xl flex items-center justify-center">
+    <div class="bg-white rounded-xl shadow-xl p-6">
+      <div class="input w-80">
+        <p>Bill <i class="fa-solid fa-dollar-sign"></i></p>
+
+        <input type="number" class="bg-gray-200 h-8 rounded p-2" id="bill" />
+
+        <p>Number of People <i class="fa-solid fa-user"></i></p>
+
+        <input type="number" class="bg-gray-200 h-8 rounded p-2" id="people" />
+
+        <p>Select Tip %</p>
+        <p>
+          <button
+            class="
+              h-8
+              w-16
+              bg-green-900
+              text-white
+              rounded
+              m-2
+              hover:bg-green-400
+            "
+            onclick="percentage=5"
+          >
+            5%
+          </button>
+          <button
+            class="
+              h-8
+              w-16
+              bg-green-900
+              text-white
+              rounded
+              m-2
+              hover:bg-green-400
+            "
+            onclick="percentage=10"
+          >
+            10%
+          </button>
+          <button
+            class="
+              h-8
+              w-16
+              bg-green-900
+              text-white
+              rounded
+              m-2
+              hover:bg-green-400
+            "
+            onclick="percentage=15"
+          >
+            15%
+          </button>
+          <button
+            class="
+              h-8
+              w-16
+              bg-green-900
+              text-white
+              rounded
+              m-2
+              hover:bg-green-400
+            "
+            onclick="percentage=25"
+          >
+            25%
+          </button>
+          <button
+            class="
+              h-8
+              w-16
+              bg-green-900
+              text-white
+              rounded
+              m-2
+              hover:bg-green-400
+            "
+            onclick="percentage=50"
+          >
+            50%
+          </button>
+        </p>
+      </div>
+      <div class="output bg-green-800 rounded">
+        <p class="text-white m-3 flex justify-between">
+          Tip Amount / person
+          <span class="text-2xl">
+            <i class="fa-solid fa-dollar-sign"></i><span id="tip"></span
+          ></span>
+        </p>
+        <p class="text-white m-3 flex justify-between">
+          Total Bill Value
+          <span class="text-2xl">
+            <i class="fa-solid fa-dollar-sign"></i><span id="total"></span
+          ></span>
+        </p>
+        <button
+          class="
+            text-white
+            h-10
+            w-52
+            rounded
+            p-1
+            m-4
+            mb-2
+            hover:bg-white hover:text-green-900
+          "
+          onclick="calc()"
+        >
+          CALCULATE
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
